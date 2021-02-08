@@ -34,6 +34,28 @@
                 alert('he is not a student');
                 
             }
+
+            var order=prompt("What do you want BMW or Mercedes-Benz");
+        while (order!=="BMW"&& order!=="Mercedes-Benz"){
+            order=prompt("What do you want BMW or Mercedes-Benz")
+        }
+
+        var item='';
+        if(order=='BMW'){
+            item='<img src="img/BMW.jpg"/>';
+        }else {
+            item='<img src="img/Mer.jpg"/>';
+        }
+
+        var NumOfCar=prompt("What it is the Number of Cars");
+        var result='';
+        for(var i=0;i<NumOfCar;i++){
+            result=result+item;
+        }
+        document.write(result);
+
+            
+
         
         
         
@@ -55,6 +77,8 @@
 </p>
 
 <img src="https://amcdn.blob.core.windows.net/media/1/root/must-use-new-mercedes-ci_w555_h555.jpg"alt="Mercedes" >
+
+    
 
     </main>
     <footer>
