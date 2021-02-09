@@ -2,6 +2,7 @@
 
 <head>
     <title>ShowRoom Car</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header>
@@ -21,62 +22,27 @@
             </li>
         </ul>
 
-        <script>
-            var fname=prompt('please enter your name','Marwan')  ;
-            var age = Number(prompt('Please enter your age'));
-
-            if(17 <= age && age  < 35){
-                alert('he is a student');
-                
         
-            }
-            else{
-                alert('he is not a student');
-                
-            }
-
-            var order=prompt("What do you want BMW or Mercedes-Benz");
-        while (order!=="BMW"&& order!=="Mercedes-Benz"){
-            order=prompt("What do you want BMW or Mercedes-Benz")
-        }
-
-        var item='';
-        if(order=='BMW'){
-            item='<img src="img/BMW.jpg"/>';
-        }else {
-            item='<img src="img/Mer.jpg"/>';
-        }
-
-        var NumOfCar=prompt("What it is the Number of Cars");
-        var result='';
-        for(var i=0;i<NumOfCar;i++){
-            result=result+item;
-        }
-        document.write(result);
-
-            
-
-        
-        
-        
-        </script>
 
 
 
     </nav>
 
 </header>
+
     <main>
+        <script class=script src='apps.js'></script>
         <h1>Sell your car Quick, Easy & Hassle-free. Get Better Offers</h1>
 
 
-        <img src="https://opensooq-images.os-cdn.com/previews/1230x0_shop/49bf/2f52/49bf2f52a41713ca376545621a533528840407869f801a9027da846ff0adb174.jpg.jpg"alt="Cars for sales">
-<p>
+        <img class=img1 src="https://opensooq-images.os-cdn.com/previews/1230x0_shop/49bf/2f52/49bf2f52a41713ca376545621a533528840407869f801a9027da846ff0adb174.jpg.jpg"alt="Cars for sales">
+<p><b>
     Search for new & used Demo and Near New cars for sale
+</b>
 
 </p>
 
-<img src="https://amcdn.blob.core.windows.net/media/1/root/must-use-new-mercedes-ci_w555_h555.jpg"alt="Mercedes" >
+<img  src="https://amcdn.blob.core.windows.net/media/1/root/must-use-new-mercedes-ci_w555_h555.jpg"alt="Mercedes" >
 
     
 
@@ -86,6 +52,7 @@
 
     </footer>
     
+
 
 </body>
 
