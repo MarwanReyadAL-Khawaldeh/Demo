@@ -1,5 +1,5 @@
 
-            var fname=prompt('please enter your name','Marwan')  ;
+            var fname=prompt('please enter your name','')  ;
             var age = Number(prompt('Please enter your age'));
 
             if(17 <= age && age  < 35){
@@ -11,7 +11,7 @@
                 alert('he is can not be a student');
                 
             }
-            
+
 
             var order=prompt("What do you want BMW or Mercedes-Benz");
         while (order!=="BMW" && order!=="Mercedes-Benz"){
