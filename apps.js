@@ -3,14 +3,15 @@
             var age = Number(prompt('Please enter your age'));
 
             if(17 <= age && age  < 35){
-                alert('he is a student');
+                alert('he is can be a student');
                 
         
             }
             else{
-                alert('he is not a student');
+                alert('he is can not be a student');
                 
             }
+            
 
             var order=prompt("What do you want BMW or Mercedes-Benz");
         while (order!=="BMW" && order!=="Mercedes-Benz"){
