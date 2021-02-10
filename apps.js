@@ -1,7 +1,8 @@
 
 var fname = prompt('please enter your name', '');
 var age = Number(prompt('Please enter your age'));
-function gitAge() {
+function web(){
+
     if (17 <= age && age <= 35) {
         alert('he is can be a student');
 
@@ -12,8 +13,8 @@ function gitAge() {
 
     }
 
-}
-gitAge();
+
+
 
 var order = prompt("What do you want BMW or Mercedes-Benz");
 
@@ -22,7 +23,6 @@ while (order !== "BMW" && order !== "Mercedes-Benz") {
 }
 
 var item = '';
-function gitCar() {
 
 
     if (order == 'BMW') {
@@ -32,12 +32,11 @@ function gitCar() {
         item = '<img src="img/Mer.jpg"/>';
     }
     //document.write(item);
-}
-
-gitCar();
 
 
-function gitNum() {
+
+
+
     var result = '';
     var NumOfCar = prompt("What it is the Number of Cars");
     for (var i = 0; i < NumOfCar; i++) {
@@ -46,8 +45,8 @@ function gitNum() {
     }
     document.write(result);
 
-}
-gitNum();
+
+
 
 
 
@@ -63,7 +62,8 @@ document.write(resultf);
 
 
 
-
+}
+web();
 
 
 
