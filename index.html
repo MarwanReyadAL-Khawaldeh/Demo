@@ -118,11 +118,15 @@ p {
     <main>
         
         <script >
+            let fname;
+            let age;
+            let NumOfCar;
+            let order;
             function getAge() {
-let fname = prompt('please enter your name', '');
+ fname = prompt('please enter your name', '');
 alert('Hello '+''+fname);
 console.log(fname);
-let age = Number(prompt('Please enter your age'));
+ age = Number(prompt('Please enter your age'));
 alert(age);
 console.log(age);
 
@@ -143,7 +147,7 @@ console.log(age);
 
     
 function getCar() {
-    let order = prompt("What do you want BMW or Mercedes-Benz");
+     order = prompt("What do you want BMW or Mercedes-Benz");
 
     while (order !== "BMW" && order !== "Mercedes-Benz") {
         order = prompt("What do you want BMW or Mercedes-Benz")
@@ -165,7 +169,7 @@ console.log(order);
 
     //document.write(item);
     let result = '';
-    let NumOfCar = prompt("What it is the Number of Cars");
+     NumOfCar = prompt("What it is the Number of Cars");
     alert(NumOfCar);
     console.log(NumOfCar);
     for (var i = 0; i < NumOfCar; i++) {
@@ -187,7 +191,7 @@ document.write(resultf);
 getAge();
 getCar();
 
-alert(fname+age+order+NumOfCar);
+alert('Name :'+fname+' '+ 'Age :'+age+' '+' Type of the Car : '+order+' '+' Num Of the Car : '+NumOfCar);
 
 
 
