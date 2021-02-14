@@ -3,6 +3,73 @@
 <head>
     <title>ShowRoom Car</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+    width:960px;
+    line-height: 1.5;
+    margin: auto;
+    background-color:gainsboro;
+}
+ header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+li{
+    margin: 40px;
+}
+
+
+ .img1{
+    width:500px;
+    margin: 20px;
+}
+h1{
+    background-color: darkred;
+    color: black;
+    
+        border-style: solid;
+        border-color:yellow;
+      
+      
+}
+
+footer{
+    background-color: black;
+    font-style: italic;
+    font-size: medium;
+    color:white;
+
+}
+
+p {
+    border-style: solid;
+    border-color:yellow;
+    background-color: red;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+    text-align: center;
+
+
+  }
+  a {
+      text-decoration: none;
+      background-color: transparent;
+      color: black;
+      border: 1px solid black;
+      padding: 20px ;
+      border-radius: 15px;
+      
+
+  }
+
+  #center {
+    background:yellowgreen;
+  }
+    </style>
 </head>
 
 <body>
@@ -32,7 +99,65 @@
     </header>
 
     <main>
-        <script class=script src='apps.js'></script>
+        <script >
+            function getAge() {
+let fname = prompt('please enter your name', '');
+let age = Number(prompt('Please enter your age'));
+
+
+
+    if (17 <= age && age <= 35) {
+        alert('he is can be a student');
+
+
+    }
+    else {
+        alert('he is can not be a student');
+
+    }
+}
+function getCar() {
+    let order = prompt("What do you want BMW or Mercedes-Benz");
+
+    while (order !== "BMW" && order !== "Mercedes-Benz") {
+        order = prompt("What do you want BMW or Mercedes-Benz")
+    }
+
+
+
+    let item = '';
+    if (order == 'BMW') {
+
+        item = '<img src="img/BMW.jpg"/>';
+    } else {
+        item = '<img src="img/Mer.jpg"/>';
+    }
+    //document.write(item);
+    let result = '';
+    let NumOfCar = prompt("What it is the Number of Cars");
+    for (var i = 0; i < NumOfCar; i++) {
+
+        result = result + item;
+    }
+    document.write(result);
+}
+
+    
+
+
+function Area(width, hight) {
+    return width * hight;
+}
+let area = Area(5, 6);
+// var resultf = `<p>${area}</p>`
+let resultf = '<p>' + '<b>' + '<b>' + "The Area = " + '</b>' + area + '</b>' + '</p>'
+document.write(resultf);
+
+
+getAge();
+getCar();
+
+        </script>
 
         <h1>Sell your car Quick, Easy & Hassle-free. Get Better Offers</h1>
 
