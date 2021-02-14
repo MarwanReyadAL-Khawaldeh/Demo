@@ -70,6 +70,22 @@ p {
   #center {
     background:yellowgreen;
   }
+  #num1{
+      background-color: yellow;
+      color: red;
+  }
+  #num2{
+      background-color:sandybrown;
+      color: black;
+  }
+  #num3{
+      background-color: cyan;
+      color: green;
+  }
+  #num4{
+      background-color: orange;
+      color:maroon;
+  }
     </style>
 </head>
 
@@ -100,11 +116,15 @@ p {
     </header>
 
     <main>
+        
         <script >
             function getAge() {
 let fname = prompt('please enter your name', '');
+alert('Hello '+''+fname);
+console.log(fname);
 let age = Number(prompt('Please enter your age'));
-
+alert(age);
+console.log(age);
 
 
     if (17 <= age && age <= 35) {
@@ -115,36 +135,45 @@ let age = Number(prompt('Please enter your age'));
     else {
         alert('he is can not be a student');
 
-    }
+    
 }
+
+}
+
+
+    
 function getCar() {
     let order = prompt("What do you want BMW or Mercedes-Benz");
 
     while (order !== "BMW" && order !== "Mercedes-Benz") {
         order = prompt("What do you want BMW or Mercedes-Benz")
     }
-
-
+alert('He chose'+' '+order);
+console.log(order);
 
     let item = '';
     if (order == 'BMW') {
+        
 
         item = '<img src="img/BMW.jpg"/>';
+        
     } else {
+        
         item = '<img src="img/Mer.jpg"/>';
+        
     }
+
     //document.write(item);
     let result = '';
     let NumOfCar = prompt("What it is the Number of Cars");
+    alert(NumOfCar);
+    console.log(NumOfCar);
     for (var i = 0; i < NumOfCar; i++) {
 
         result = result + item;
     }
     document.write(result);
-}
-
-    
-
+}  
 
 function Area(width, hight) {
     return width * hight;
@@ -158,7 +187,12 @@ document.write(resultf);
 getAge();
 getCar();
 
+alert(fname+age+order+NumOfCar);
+
+
+
         </script>
+        
 
         <h1>Sell your car Quick, Easy & Hassle-free. Get Better Offers</h1>
 
@@ -171,6 +205,12 @@ getCar();
             </b>
 
         </p>
+
+        <p id='num1'>Please enter your Name?</p>
+        <p id='num2'>Please enter your Age?</p>
+        <p id='num3'>What do you want BMW or Mercedes-Benz</p>
+        <p id='num4'>What it is the Number of Cars</p>
+
 
         <img src="https://amcdn.blob.core.windows.net/media/1/root/must-use-new-mercedes-ci_w555_h555.jpg"
             alt="Mercedes">
