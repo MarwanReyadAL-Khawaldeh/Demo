@@ -4,17 +4,16 @@ body{
     margin: auto;
     background-color:gainsboro;
 }
-header{
+ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 25px;
 }
- header nav ul li{
-     display: inline;
-     
+li{
+    margin: 40px;
+}
 
- }
 
  .img1{
     width:500px;
@@ -61,6 +60,9 @@ p {
 
   }
 
+  #center {
+    background:yellowgreen;
+  }
   
 
 

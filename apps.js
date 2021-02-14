@@ -1,7 +1,9 @@
 
-var fname = prompt('please enter your name', '');
-var age = Number(prompt('Please enter your age'));
-function web(){
+function getAge() {
+let fname = prompt('please enter your name', '');
+let age = Number(prompt('Please enter your age'));
+
+
 
     if (17 <= age && age <= 35) {
         alert('he is can be a student');
@@ -12,19 +14,17 @@ function web(){
         alert('he is can not be a student');
 
     }
-
-
-
-
-var order = prompt("What do you want BMW or Mercedes-Benz");
-
-while (order !== "BMW" && order !== "Mercedes-Benz") {
-    order = prompt("What do you want BMW or Mercedes-Benz")
 }
+function getCar() {
+    let order = prompt("What do you want BMW or Mercedes-Benz");
 
-var item = '';
+    while (order !== "BMW" && order !== "Mercedes-Benz") {
+        order = prompt("What do you want BMW or Mercedes-Benz")
+    }
 
 
+
+    let item = '';
     if (order == 'BMW') {
 
         item = '<img src="img/BMW.jpg"/>';
@@ -32,38 +32,36 @@ var item = '';
         item = '<img src="img/Mer.jpg"/>';
     }
     //document.write(item);
-
-
-
-
-
-    var result = '';
-    var NumOfCar = prompt("What it is the Number of Cars");
+    let result = '';
+    let NumOfCar = prompt("What it is the Number of Cars");
     for (var i = 0; i < NumOfCar; i++) {
-        
+
         result = result + item;
     }
     document.write(result);
+}
 
-
-
-
-
+    
 
 
 function Area(width, hight) {
     return width * hight;
 }
-var area = Area(5, 6);
+let area = Area(5, 6);
 // var resultf = `<p>${area}</p>`
-var resultf = '<p>' + '<b>' + '<b>' + "The Area = " + '</b>' + area + '</b>' + '</p>'
+let resultf = '<p>' + '<b>' + '<b>' + "The Area = " + '</b>' + area + '</b>' + '</p>'
 document.write(resultf);
 
 
+getAge();
+getCar();
 
 
-}
-web();
+
+
+
+
+
 
 
 
